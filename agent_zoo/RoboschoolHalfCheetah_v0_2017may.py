@@ -31,6 +31,7 @@ def demo_run():
         while 1:
             a = pi.act(obs)
             obs, r, done, _ = env.step(a)
+
             score += r
             frame += 1
             still_open = env.render("human")
